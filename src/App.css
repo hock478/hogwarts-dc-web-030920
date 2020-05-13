@@ -138,3 +138,14 @@ ul {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.ui{
+  width: 50%;
+  text-align:center;
+  display: block;
+  margin: 0 auto;
+
+}
+/* .SearchBar{
+  width: 50%;
+} */
