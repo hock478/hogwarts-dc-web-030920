@@ -52,7 +52,8 @@ class App extends Component {
   }
 
   searchSelect = (event) => {
-    const byName = this.state.arr.filter(hog => hog.name.includes(event.target.value))
+    let input = event.target.value
+    const byName = this.state.arr.filter(hog => hog.name.substring(0, input.length).toLowerCase() === input.toLowerCase())
     console.log(byName)
     this.setState({filtered: byName})
   }
